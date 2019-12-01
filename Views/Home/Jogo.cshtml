@@ -1,0 +1,177 @@
+﻿
+@{
+	ViewBag.Title = "Jogo";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> Parte B:</h2>
+<div class="row" style="text-align:center">
+	<h2>Torneio:</h2>
+	<div class="col-lg-4" style="background-color:aquamarine;">
+		<p>
+			Selecione os jogadores para a batalha 1.
+		</p>
+         <form action="Jogo" method="post">
+			<label for="player1">Jogador 1:</label>
+			<select name="player1" id="player1">
+				<option value="all" selected>Allen</option>
+				<option value="arm">Armando</option>
+				<option value="dav">Dave</option>
+				<option value="div">David E</option>
+				<option value="mic">Michael</option>
+				<option value="omr">Omer</option>
+				<option value="ric">Richard</option>
+				<option value="rix">Richard X</option>
+			</select>
+			<div>
+				<label for="player2">Jogador 2:</label>
+				<select name="player2" id="player2">
+					<option value="all">Allen</option>
+					<option value="arm"selected>Armando</option>
+					<option value="dav">Dave</option>
+					<option value="div">David E</option>
+					<option value="mic">Michael</option>
+					<option value="omr">Omer</option>
+					<option value="ric">Richard</option>
+					<option value="rix">Richard X</option>
+				</select>
+			</div>
+			<p>
+				Selecione os jogadores para a batalha 2.
+			</p>
+			<div>
+				<label for="player3"> Jogador 1:</label>
+				<select name="player3" id="player3">
+					<option value="all">Allen</option>
+					<option value="arm">Armando</option>
+					<option value="dav"selected>Dave</option>
+					<option value="div">David E</option>
+					<option value="mic">Michael</option>
+					<option value="omr">Omer</option>
+					<option value="ric">Richard</option>
+					<option value="rix">Richard X</option>
+				</select>
+				</div>
+			 <div>
+				<label for="player4">  Jogador 2:</label>
+				<select name="player4" id="player4">
+					<option value="all">Allen</option>
+					<option value="arm">Armando</option>
+					<option value="dav">Dave</option>
+					<option value="div"selected>David E</option>
+					<option value="mic">Michael</option>
+					<option value="omr">Omer</option>
+					<option value="ric">Richard</option>
+					<option value="rix">Richard X</option>
+				</select>
+			</div>
+			<p>
+				Selecione os jogadores para a batalha 3.
+			</p>
+			<div>
+				<label for="player5"> Jogador 1:</label>
+				<select name="player5" id="player5">
+					<option value="all">Allen</option>
+					<option value="arm">Armando</option>
+					<option value="dav">Dave</option>
+					<option value="div">David E</option>
+					<option value="mic"selected>Michael</option>
+					<option value="omr">Omer</option>
+					<option value="ric">Richard</option>
+					<option value="rix">Richard X</option>
+				</select>
+			</div>
+			<div>
+				<label for="player6">  Jogador 2:</label>
+				<select name="player6" id="player6">
+					<option value="all">Allen</option>
+					<option value="arm">Armando</option>
+					<option value="dav">Dave</option>
+					<option value="div">David E</option>
+					<option value="mic">Michael</option>
+					<option value="omr"selected>Omer</option>
+					<option value="ric">Richard</option>
+					<option value="rix">Richard X</option>
+				</select>
+			</div>
+			<p>
+				Selecione os jogadores para a batalha 4.
+			</p>
+			<div>
+				<label for="player7"> Jogador 1:</label>
+				<select name="player7" id="player7">
+					<option value="all">Allen</option>
+					<option value="arm">Armando</option>
+					<option value="dav">Dave</option>
+					<option value="div">David E</option>
+					<option value="mic">Michael</option>
+					<option value="omr">Omer</option>
+					<option value="ric"selected>Richard</option>
+					<option value="rix">Richard X</option>
+				</select>
+			</div>
+			<div>
+				<label for="player8">  Jogador 2:</label>
+				<select name="player8" id="player8">
+					<option value="all">Allen</option>
+					<option value="arm">Armando</option>
+					<option value="dav">Dave</option>
+					<option value="div">David E</option>
+					<option value="mic">Michael</option>
+					<option value="omr">Omer</option>
+					<option value="ric">Richard</option>
+					<option value="rix"selected>Richard X</option>
+				</select>
+			</div>
+			<div class="row" style="margin-top:30px">
+				<input type="submit" value="Iniciar" style=" width: 200px;" />
+			</div>
+			<br />
+		</form>
+	</div>
+		<div class="col-lg-4" style="background-color:bisque;margin-top:100px;">
+			<p>
+				Jogadores para a semi-final 1.
+			</p>
+				
+				<label for="semi1"> Jogador 1:</label>
+				<input type="text" name="semi1" value="@ViewBag.quartas1" readonly>
+				<label for="semi2"> Jogador 2:</label>
+				<input type="text" name="semi2" value="@ViewBag.quartas2" readonly>
+				<p>
+					Jogadores para a semi-final 2.
+				</p>
+
+				<label for="semi3"> Jogador 1:</label>
+				<input type="text" name="semi3" value="@ViewBag.quartas3" readonly>
+
+				<label for="semi4">  Jogador 2:</label>
+				<input type="text" name="semi4" value="@ViewBag.quartas4" readonly>
+				<div class="row" style="margin-top:20px;text-align:center;">
+					
+				</div>
+				<br />
+			
+		</div>
+		<div class="col-lg-4" style="background-color: khaki;margin-top:150px;">
+			<p>
+				Jogadores para a final.
+			</p>
+			
+				<label for="final1"> Jogador 1:</label>
+				<input type="text" name="final1" value="@ViewBag.final1" readonly>
+
+				<label for="final2"> Jogador 2:</label>
+				<input type="text" name="final2" value="@ViewBag.final2" readonly>
+				<div class="row" style="margin-top:40px;text-align:center;">
+					
+				</div>
+				<br />
+			
+		</div>
+</div>
+<div class="row" style="text-align:center;">
+	
+		<h2 style="margin-left: 10px;"> O vencedor é: [[@ViewBag.vencedor],[@ViewBag.jogada]].</h2>
+	
+</div>

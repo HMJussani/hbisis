@@ -1,0 +1,60 @@
+﻿@{
+				/**/
+
+				ViewBag.Title = "Jogo Papel Pedra Tesoura";
+}
+<h2>Parte A:</h2>
+<div class="row" style="text-align:center;">
+	<div class="col-md-12">
+		<h2>Jogue:</h2>
+		<p>
+			As regras são: (R) pedra  bate (S) tesoura , (S) tesoura  bate (P) papel e (P) papel bate (R) pedra.
+		</p>
+	</div>
+</div>
+
+<form action="" method="post">
+	<div class="row" style="text-align:center;">
+		<div class="col-md-12">
+			<strong>Jogador1</strong>
+			<input type="text" id="play1" name="player1" value="@ViewBag.play1" style="margin-top:20px" />
+			<input type="radio" name="joga1" id="pedra1" value="R" checked="checked" />
+			<label for="pedra">ROCK</label>
+			<input type="radio" name="joga1" id="papel1" value="P" />
+			<label for="papel">PAPER</label>
+			<input type="radio" name="joga1" id="tesoura1" value="S" />
+			<label for="tesoura">SCISSORS</label>
+		</div>
+		<div class="col-md-12">
+			<strong>Jogador2</strong>
+			<input type="text" id="play2" name="player2" value="@ViewBag.play2" style="margin-top:20px" />
+			<input type="radio" name="joga2" id="pedra" value="R" checked="checked" />
+			<label for="pedra">ROCK</label>
+			<input type="radio" name="joga2" id="papel" value="P" />
+			<label for="papel">PAPER</label>
+			<input type="radio" name="joga2" id="tesoura" value="S" />
+			<label for="tesoura">SCISSORS</label>
+		</div>
+	</div>
+	<div class="row" style="margin-top:20px;text-align:center;">
+		<div class="col-md-12">
+			<input type="submit" value="Jogar" style="margin-left: 60px; width: 200px;" />
+		</div>
+	</div>
+</form>
+<div class="row" style="text-align:center;">
+	<div class="col-md-12">
+		<h2 style="margin-left: 10px;"> O vencedor é: [[@ViewBag.vencedor],[@ViewBag.jogada]].</h2>
+	</div>
+</div>
+<h2>@Html.ActionLink("Parte B", "Jogo", "Home")</h2>
+
+
+
+
+
+
+
+
+
+
