@@ -10,6 +10,8 @@ namespace rps_game.Models{
 
         public string rps_game_winner(string jogador1, string jogada1, string jogador2, string jogada2){
             string vencedor = "";
+            jogada1 = jogada1.ToUpper();
+            jogada2 = jogada2.ToUpper();
             if (jogador1.Equals("") || jogador2.Equals("")){
                 vencedor = "WrongNumberOfPlayersError";
             }else{
