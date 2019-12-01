@@ -14,6 +14,8 @@ namespace rps_game.Models
         public string setJogada(string jogador)
         {
             string jogada = "";
+            jogada1 = jogada1.ToUpper();
+            jogada2 = jogada2.ToUpper();
             switch (jogador)
             {
                 case "all":
